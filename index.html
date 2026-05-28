@@ -3,37 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моё портфолио | Студентка 1 курса</title>
+    <title>Портфолио | MGG911</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Привет, я <span id="typing"></span></h1>
-        <p class="subtitle">Студентка 1 курса кибербезопасности </p>
+
+    <div class="portfolio-container">
         
-        <div class="card">
-            <h2>Мои проекты</h2>
-            <ul>
-                <li>🔐 Биометрическая программа для распознавания лиц (Python)</li>
-                <li>🤖 Телеграм-боты</li>
-                <li>Разработка игр, опыт на хакатоне</li>
-            </ul>
-        </div>
+        <!-- Шапка профиля -->
+        <header class="profile-header">
+            <div class="avatar-placeholder">M</div>
+            <h1>Привет, я MGG911 👋</h1>
+            <p class="specialty">Разработчик / QA Engineer / Занимаюсь умными системами и мобильной разработкой</p>
+        </header>
 
-        <div class="card">
-            <h2>Что я умею</h2>
-            <div class="skills">
-                <span class="skill">Python</span>
-                <span class="skill">JavaScript (база)</span>
-                <span class="skill">Github</span>
-                <span class="skill">VS Code</span>
+        <!-- Блок о себе -->
+        <section class="bio-section">
+            <h2>О себе</h2>
+            <p>
+                Студентка технического вуза, создающая MVP и симуляции сложных технологических продуктов. Участвую в хакатонах, создаю игры, проектирую интерфейсы и настраиваю сетевую безопасность. Ценю комплексный подход: от работы с базами данных и искусственным интеллектом до тонкой настройки портов и симуляции оборудования.
+            </p>
+        </section>
+
+        <!-- Проекты и Опыт -->
+        <section class="projects-section">
+            <h2>Главные проекты & Опыт</h2>
+            
+            <!-- Oasis AI -->
+            <div class="project-card">
+                <h3>🌱 Oasis AI — Умная система полива</h3>
+                <p><strong>Что сделано:</strong> Разработала концепцию и веб-ориентированный MVP автоматизированной системы полива растений со встроенной UV-лампой. Интегрировала искусственный интеллект (нейросеть) для анализа состояния растений, настроила базу данных для хранения параметров и спроектировала программную симуляцию работы аппаратной части.</p>
+                <div class="project-tags">
+                    <span>AI / Нейросети</span> <span>MySQL</span> <span>Web MVP</span> <span>Симуляция</span> <span>UV-lamp</span>
+                </div>
             </div>
-        </div>
 
-       
+            <!-- Стажировка Sber -->
+            <div class="project-card">
+                <h3>💼 Опыт & Практика (Сетевые технологии и QA)</h3>
+                <p><strong>Что сделано:</strong> Практический опыт настройки, мониторинга и тестирования систем. Глубоко разбираюсь в анализе сетевого трафика, маршрутизации и безопасности инфраструктуры. Работала с виртуализацией и симуляцией сетей Cisco.</p>
+                <div class="project-tags">
+                    <span>Wireshark</span> <span>tcpdump</span> <span>Cisco</span> <span>SSH forwarding</span> <span>NAT</span> <span>VirtualBox</span>
+                </div>
+            </div>
 
- 
+            <!-- Flutter App -->
+            <div class="project-card">
+                <h3>📱 Разработка мобильного интерфейса</h3>
+                <p><strong>Что сделано:</strong> Спроектировала и разработала мобильное приложение с использованием фреймворка Flutter в качестве удобного интерфейса управления умным домом. Полностью настроила окружение разработки, Git-архитектуру проекта и UI/UX компоненты.</p>
+                <div class="project-tags">
+                    <span>Flutter SDK</span> <span>Dart</span> <span>Git</span> <span>UI/UX Mobile</span>
+                </div>
+            </div>
 
-    <script src="script.js"></script>
+            <!-- Хакатоны и Биометрия -->
+            <div class="project-card">
+                <h3>🎮 Хакатоны & Биометрические программы</h3>
+                <p><strong>Что сделано:</strong> Разработка игровых проектов в условиях жестких дедлайнов на хакатонах. Создание программных решений со сложной логикой, включая биометрические системы авторизации и учета, а также быструю сборку и верстку веб-интерфейсов любой сложности под ключ.</p>
+                <div class="project-tags">
+                    <span>Game Dev</span> <span>Биометрия</span> <span>Хакатоны</span> <span>Быстрая верстка</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Технический стек -->
+        <section class="skills-section">
+            <h2>Мой стек технологий</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Языки & Стек:</h4>
+                    <p>HTML5, CSS3, JavaScript, Java</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Фреймворки & БД:</h4>
+                    <p>Flutter, Dart, MySQL</p>
+                </div>
+                <div class="skill-category">
+                    <h4>Сети & Инструменты:</h4>
+                    <p>Wireshark, tcpdump, Cisco, Nmap, Git, GitHub</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ссылки -->
+        <footer class="contacts-section">
+            <h2>Связаться со мной</h2>
+            <div class="contact-buttons">
+                <a href="https://t.me/твой_логин" target="_blank" class="btn telegram">Telegram</a>
+                <a href="mailto:твоя_почта@example.com" class="btn email">Email</a>
+            </div>
+        </footer>
+
+    </div>
+
 </body>
 </html>
